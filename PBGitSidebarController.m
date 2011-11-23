@@ -36,7 +36,7 @@
 - (id)initWithRepository:(PBGitRepository *)theRepository superController:(PBGitWindowController *)controller
 {
 	self = [super initWithRepository:theRepository superController:controller];
-	[sourceView setDelegate:self];
+	[sourceView setDelegate:(id<NSOutlineViewDelegate>)self];
 	items = [NSMutableArray array];
 
 	return self;

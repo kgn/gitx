@@ -161,7 +161,7 @@ int	main( int argc, const char** argv )
 	
 	NSApplication *app = [NSApplication sharedApplication];
 	GAPAppDelegate *appDel = [[GAPAppDelegate alloc] init];
-	[app setDelegate: appDel];
+	[app setDelegate:(id<NSApplicationDelegate>)appDel];
 	NSWindow *passPanel = [appDel passwordPanel];
 	
 	[app activateIgnoringOtherApps: YES];

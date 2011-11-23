@@ -33,6 +33,7 @@
 
 - (void) selectStage;
 - (void) selectCurrentBranch;
+- (void) menuNeedsUpdate:(NSMenu *)menu;
 
 - (NSMenu *) menuForRow:(NSInteger)row;
 

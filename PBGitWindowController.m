@@ -55,7 +55,7 @@
 
 - (void) awakeFromNib
 {
-	[[self window] setDelegate:self];
+	[[self window] setDelegate:(id<NSWindowDelegate>)self];
 	[[self window] setAutorecalculatesContentBorderThickness:NO forEdge:NSMinYEdge];
 	[[self window] setContentBorderThickness:31.0f forEdge:NSMinYEdge];
 
