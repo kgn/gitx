@@ -9,7 +9,7 @@
 // the private QL API
 + (id)_previewPanel;
 + (BOOL)isSharedPreviewPanelLoaded;
-- (id)initWithContentRect:(struct _NSRect)fp8 styleMask:(unsigned int)fp24 backing:(unsigned int)fp28 defer:(BOOL)fp32;
+- (id)initWithContentRect:(NSRect)fp8 styleMask:(unsigned int)fp24 backing:(unsigned int)fp28 defer:(BOOL)fp32;
 - (id)initWithCoder:(id)fp8;
 - (void)dealloc;
 - (BOOL)isOpaque;
@@ -17,9 +17,9 @@
 - (BOOL)canBecomeMainWindow;
 - (BOOL)shouldIgnorePanelFrameChanges;
 - (BOOL)isOpen;
-- (void)setFrame:(struct _NSRect)fp8 display:(BOOL)fp24 animate:(BOOL)fp28;
-- (id)_subEffectsForWindow:(id)fp8 itemFrame:(struct _NSRect)fp12 transitionWindow:(id *)fp28;
-- (id)_scaleEffectForItemFrame:(struct _NSRect)fp8 transitionWindow:(id *)fp24;
+- (void)setFrame:(NSRect)fp8 display:(BOOL)fp24 animate:(BOOL)fp28;
+- (id)_subEffectsForWindow:(id)fp8 itemFrame:(NSRect)fp12 transitionWindow:(id *)fp28;
+- (id)_scaleEffectForItemFrame:(NSRect)fp8 transitionWindow:(id *)fp24;
 - (void)_invertCurrentEffect;
 - (struct _NSRect)_currentItemFrame;
 - (void)setAutosizesAndCenters:(BOOL)fp8;

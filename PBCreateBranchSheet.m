@@ -61,7 +61,7 @@
 		}
 	}
 
-	[NSApp beginSheet:[self window] modalForWindow:[self.repository.windowController window] modalDelegate:self didEndSelector:nil contextInfo:NULL];
+	[NSApp beginSheet:[self window] modalForWindow:[(NSWindowController *)self.repository.windowController window] modalDelegate:self didEndSelector:nil contextInfo:NULL];
 }
 
 
