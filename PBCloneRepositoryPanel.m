@@ -82,7 +82,7 @@
 {
 	NSAlert *alert = [NSAlert alertWithMessageText:messageText
 									 defaultButton:nil alternateButton:nil otherButton:nil
-						 informativeTextWithFormat:infoText];
+						 informativeTextWithFormat:@"%@", infoText];
 	
 	[alert beginSheetModalForWindow:[self window]
 					  modalDelegate:self 
