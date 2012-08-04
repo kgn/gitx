@@ -11,7 +11,7 @@
 
 @class PBViewController, PBGitSidebarController, PBGitCommitController;
 
-@interface PBGitWindowController : NSWindowController {
+@interface PBGitWindowController : NSWindowController <NSWindowDelegate> {
 	__weak PBGitRepository* repository;
 
 	PBViewController *contentController;

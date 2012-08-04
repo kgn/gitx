@@ -254,4 +254,8 @@
 	[mainView setFrame:mainFrame];
 }
 
+- (void)windowDidBecomeKey:(NSNotification *)notification{
+    [self refresh:nil];
+}
+
 @end
